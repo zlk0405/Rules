@@ -1,0 +1,9 @@
+name: 自定义 DNS 配置  
+dns:  
+  default-nameserver: #!replace  
+    - system  
+    - 119.29.29.29  # DNSPod  
+    - 8.8.8.8       # Google DNS  
+  nameserver: #!replace  
+    - https://doh.pub/dns-query  # DNSPod DoH  
+    - https://dns.google/dns-query  # Google DoH  
